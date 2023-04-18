@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class enemigo2 : MonoBehaviour
 {
-    [SerializeField] GameObject ubicacion;
+    
     [SerializeField] GameObject jugador;
     [SerializeField] float velocidad=2;
     [SerializeField] Transform mytransform;
@@ -27,10 +27,11 @@ public class enemigo2 : MonoBehaviour
     public void seguir(GameObject jugador)
     {
         Debug.Log("1");
-        elrigidbody2D.velocity=(jugador.transform.position - mytransform.position).normalized*velocidad;
+        elrigidbody2D.velocity = (jugador.transform.position - mytransform.position).normalized * velocidad;
     }
-    static void irUbicacion(GameObject jugador)
+    public void irUbicacion(GameObject ubicacion)
     {
-
+        Debug.Log("2");
+        elrigidbody2D.velocity = (ubicacion.transform.position - mytransform.position).normalized * velocidad;
     }
 }
