@@ -26,12 +26,10 @@ public class enemigo2 : MonoBehaviour
 
     public void seguir(GameObject jugador)
     {
-        Debug.Log("1");
         elrigidbody2D.velocity = (jugador.transform.position - mytransform.position).normalized * velocidad;
     }
     public void irUbicacion(GameObject ubicacion)
     {
-        Debug.Log("2");
         elrigidbody2D.velocity = (ubicacion.transform.position - mytransform.position).normalized * velocidad;
     }
 }
