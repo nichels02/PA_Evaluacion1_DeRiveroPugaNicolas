@@ -7,6 +7,8 @@ TagManager:
   - PuntoA
   - PuntoB
   - jugador
+  - bala
+  - enemigos
   layers:
   - Default
   - TransparentFX
@@ -47,9 +49,12 @@ TagManager:
   - name: borde
     uniqueID: 2294099527
     locked: 0
+  - name: juego
+    uniqueID: 1110140583
+    locked: 0
   - name: enemigos
     uniqueID: 1557806669
     locked: 0
-  - name: juego
-    uniqueID: 1110140583
+  - name: jugador
+    uniqueID: 123361473
     locked: 0
